@@ -4,7 +4,11 @@ description:
 ---
 
 <div class="text-container center-text">
-    <p>Your download should start automatically. If it doesn't, <a href="your_download_link_here">click here</a>.</p>
+    <p><strong>Beta Notice:</strong> MacClipboard is in beta and we're frequently updating with new features. Stay
+        connected so you don't miss out!</p>
+    <p>Your download should start automatically. If it doesn't, <a
+            href="https://github.com/awalwema/macclipboard-website/releases/download/v1.0.0/MacClipboard.1.0.dmg">click
+            here</a>.</p>
 
     <section class="cta">
         <h2><strong>Stay Updated</strong></h2>
@@ -15,3 +19,15 @@ description:
             width="640" height="418" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
     </section>
 </div>
+
+
+<script type="text/javascript">
+    window.onload = function () {
+        var downloadLink = document.createElement('a');
+        downloadLink.href = "https://github.com/awalwema/macclipboard-website/releases/download/v1.0.0/MacClipboard.1.0.dmg";
+        downloadLink.download = 'MacClipboard.1.0.dmg';
+        document.body.appendChild(downloadLink);
+        downloadLink.click();
+        document.body.removeChild(downloadLink);
+    };
+</script>
