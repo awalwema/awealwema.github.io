@@ -15,11 +15,13 @@
 		@media #{$tablet} {
 			max-width: 150px;
 		}
+
 		a {
 
 			&:hover {
 				text-decoration: none;
 			}
+
 			svg {
 				fill: #999;
 				margin-right: 10px;
@@ -70,19 +72,19 @@ footer {
 	padding: 50px 0 50px 0;
 	font-size: 1.1em;
 	position: relative;
-	background: #2b2b40;
+	background: #333333;
 	color: #fff;
 
 	.copyright {
 		font-size: .8em;
 		margin: 0 auto;
-		
+
 		@media #{$tablet} {
 			text-align: center;
 		}
 
 	}
-	
+
 	&,
 	a {
 		color: #999;
