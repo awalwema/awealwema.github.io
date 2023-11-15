@@ -73,11 +73,12 @@ footer {
 	font-size: 1.1em;
 	position: relative;
 	background: #333333;
-	color: #fff;
+	color: white;
 
 	.copyright {
 		font-size: .8em;
 		margin: 0 auto;
+		color: white;
 
 		@media #{$tablet} {
 			text-align: center;
@@ -87,13 +88,13 @@ footer {
 
 	&,
 	a {
-		color: #999;
+		color: white;
 	}
 
 	h2 {
 		font-size: 1.4em;
 		margin: 30px 0;
-		color: #ccc;
+		color: white;
 	}
 
 	.footer-columns {
@@ -114,7 +115,7 @@ footer {
 		width: 100%;
 		padding: 30px 0;
 		margin: 0;
-		background-color: #222527;
+		background-color: white;
 
 		a {
 			font-weight: 600;
