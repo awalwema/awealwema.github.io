@@ -9,6 +9,8 @@ description:
     <p>Your download should start automatically. If it doesn't, <a
             href="https://github.com/awalwema/macclipboard-website/releases/download/v1.0.1/MacClipboard.dmg">click
             here</a>.</p>
+    <p id="non-mobile-message" style="display: none;">This app is intended for macOS and is not available for mobile
+        devices.</p>
 
     <section class="cta">
         <h2><strong>Stay Updated</strong></h2>
@@ -16,18 +18,27 @@ description:
 
         <iframe
             src="https://docs.google.com/forms/d/e/1FAIpQLSdmYe8lz5ht3MjOktHSHIocr8ntaOWGyKSzmG3r95QPU2sUUA/viewform?embedded=true"
-            width="640" height="418" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+            width="400" height="600" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
     </section>
 </div>
 
 
 <script type="text/javascript">
+    function isMobileDevice() {
+        return /Mobi|Android/i.test(navigator.userAgent);
+    }
+
     window.onload = function () {
-        var downloadLink = document.createElement('a');
-        downloadLink.href = "https://github.com/awalwema/macclipboard-website/releases/download/v1.0.1/MacClipboard.dmg";
-        downloadLink.download = 'MacClipboard.1.0.dmg';
-        document.body.appendChild(downloadLink);
-        downloadLink.click();
-        document.body.removeChild(downloadLink);
+        if (!isMobileDevice()) {
+            var downloadLink = document.createElement('a');
+            downloadLink.href = "https://github.com/awalwema/macclipboard-website/releases/download/v1.0.1/MacClipboard.dmg";
+            downloadLink.download = 'MacClipboard.1.0.dmg';
+            document.body.appendChild(downloadLink);
+            downloadLink.click();
+            document.body.removeChild(downloadLink);
+        } else {
+            document.getElementById('download-message').style.display = 'none';
+            document.getElementById('non-mobile-message').style.display = 'block';
+        }
     };
 </script>
