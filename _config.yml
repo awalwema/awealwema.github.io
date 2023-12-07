@@ -10,7 +10,7 @@ disqus_shortname:
 
 # Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
 logo: /siteicon.png
-description: Product marketing template for Jekyll.
+description: "MacClipboard: clipboard manager for MacOs."
 author:
   name: Andrew
   email: gratatouille23@gmail.com
