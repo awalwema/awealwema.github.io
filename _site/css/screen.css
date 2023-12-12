@@ -153,11 +153,19 @@ blockquote:before { color: #ccc; content: open-quote; font-size: 4em; line-heigh
 
 .contact-details { font-size: .9em; text-align: center; }
 
+a { color: #0000ee; text-decoration: underline; font-weight: bold; }
+
+a:hover { text-decoration: none; }
+
+a:visited { color: #551a8b; }
+
+a:focus, a:active { outline: none; border-bottom: 2px solid #0000ee; }
+
 .blog-posts { list-style: none; padding: 0; }
 
 .blog-posts li { margin: 100px 0; }
 
-.blog-post .author { padding: 30px 0 0 0; border: 1px solid #eee; margin: 30px 0; font-size: .8em; }
+.blog-post .author { padding: 30px 0 0 0; border: 1px solid #eee; margin: 30px 0; font-size: 0.8em; }
 
 .blog-post .author .square-image { width: 125px; height: 125px; margin-top: 0; }
 
@@ -175,7 +183,7 @@ blockquote:before { color: #ccc; content: open-quote; font-size: 4em; line-heigh
 
 .blog-post .blog-navigation .next { text-align: right; }
 
-.blog-post .post-details { border-bottom: 1px solid #eee; font-size: .9em; }
+.blog-post .post-details { border-bottom: 1px solid #eee; font-size: 0.9em; }
 
 .blog-post .post-details .blog-filter { display: inline-block; text-align: left; }
 
@@ -193,13 +201,13 @@ blockquote:before { color: #ccc; content: open-quote; font-size: 4em; line-heigh
 
 .blog-filter { text-align: center; }
 
-.blog-filter a { background: #eee; padding: 3px 5px; font-size: .8em; border-radius: 5px; color: #888; transition: .2s ease-in-out; }
+.blog-filter a { background: #272626; padding: 3px 5px; font-size: 0.8em; border-radius: 5px; color: #48b939; transition: 0.2s ease-in-out; }
 
 .blog-filter a:hover { color: #555; text-decoration: none; }
 
 .blog-filter.cross a { padding-right: 8px; }
 
-.blog-filter.cross a:after { content: "x"; font-size: .5em; position: relative; bottom: 4px; right: -3px; }
+.blog-filter.cross a:after { content: "x"; font-size: 0.5em; position: relative; bottom: 4px; right: -3px; }
 
 .button a, input[type=submit] { color: #fff; text-decoration: none; padding: 10px 30px; background: #778646; border-radius: 3px; border: 1px solid rgba(255, 255, 255, 0.5); transition: .2s ease-in-out; }
 
