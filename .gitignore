@@ -1,0 +1,19 @@
+# Site and build output
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# Dependency directories (comment out if you want to track dependencies)
+/vendor/
+/node_modules/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Personal/IDE specific
+.idea/
+.vscode/
+*.swp
+*~

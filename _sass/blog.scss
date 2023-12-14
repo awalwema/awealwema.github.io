@@ -108,6 +108,18 @@ a {
     .button {
       margin: 30px 0 0 0;
     }
+
+    ol {
+      list-style: decimal; /* Ensures standard numerical listing */
+      padding-left: 20px; /* Adjusts the padding to align with the rest of the content */
+    }
+
+    ol li {
+      color: #000; /* Sets the font color to match the rest of the text */
+      font-size: 1em; /* Adjusts the font size to match other text content */
+      margin-bottom: 10px; /* Adds space between list items */
+      line-height: 1.6; /* Adjusts line height to match the rest of the text */
+    }
   }
 }
 
