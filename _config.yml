@@ -16,9 +16,8 @@ author:
   email: gratatouille23@gmail.com
   twitter: gratatouille23
 social:
-  name: 
+  name:
   links:
-    
 
 # -----
 # Build
@@ -98,4 +97,4 @@ _comments:
   color: The background colour used in the plan name and call to action.
   new_window: Open link in new window
 
-download_link: https://github.com/awalwema/macclipboard-website/releases/download/v2.2.0/MacClipboard.dmg
+download_link: https://github.com/awalwema/macclipboard-website/releases/download/v2.4.0/MacClipboard.dmg
