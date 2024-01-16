@@ -1,30 +1,42 @@
 ---
-title: MacClipboard Blog
-description: "Dive into the world of MacClipboard with our blog. Stay updated on the latest features, productivity tips,
+title: ClipPilot Blog
+description: "Dive into the world of ClipPilot with our blog. Stay updated on the latest features, productivity tips,
 and innovative updates that are shaping the future of clipboard management on macOS. Join our community of tech
 enthusiasts and optimize your Mac experience with us!"
 ---
 
 <div class="text-container">
-    <p class="editor-link"><a href="cloudcannon:collections/_posts" class="btn"><strong>&#9998;</strong> Add Post</a>
-    </p>
-    <ul class="blog-posts">
-        {% include list-posts.html posts=paginator.posts %}
-    </ul>
+  <p class="editor-link">
+    <a href="cloudcannon:collections/_posts" class="btn"
+      ><strong>&#9998;</strong> Add Post</a
+    >
+  </p>
+  <ul class="blog-posts">
+    {% include list-posts.html posts=paginator.posts %}
+  </ul>
 
-    {% if paginator.total_pages > 1 %}
-    <!-- Pagination links -->
-    <div class="pagination">
-        {% if paginator.previous_page %}
-        <a href="{% include relative-src.html src=paginator.previous_page_path %}" class="previous btn">&larr; Newer
-            posts</a>
-        {% endif %}
-
-        <span class="page_number ">{{ paginator.page }} of {{ paginator.total_pages }}</span>
-
-        {% if paginator.next_page %}
-        <a href="{% include relative-src.html src=paginator.next_page_path %}" class="next btn">Older posts &rarr;</a>
-        {% endif %}
-    </div>
+  {% if paginator.total_pages > 1 %}
+  <!-- Pagination links -->
+  <div class="pagination">
+    {% if paginator.previous_page %}
+    <a
+      href="{% include relative-src.html src=paginator.previous_page_path %}"
+      class="previous btn"
+      >&larr; Newer posts</a
+    >
     {% endif %}
+
+    <span class="page_number"
+      >{{ paginator.page }} of {{ paginator.total_pages }}</span
+    >
+
+    {% if paginator.next_page %}
+    <a
+      href="{% include relative-src.html src=paginator.next_page_path %}"
+      class="next btn"
+      >Older posts &rarr;</a
+    >
+    {% endif %}
+  </div>
+  {% endif %}
 </div>

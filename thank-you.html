@@ -4,40 +4,50 @@ description:
 ---
 
 <div class="text-container center-text">
-    <p><strong>Beta Notice:</strong> MacClipboard is in beta and we're frequently updating with new features. Stay
-        connected so you don't miss out!</p>
-    <p>Your download should start automatically. If it doesn't, <a href="{{ site.download_link }}">click
-            here</a>.</p>
-    <p id="non-mobile-message" style="display: none;">This app is intended for macOS and is not available for mobile
-        devices.</p>
+  <p>
+    <strong>Beta Notice:</strong> ClipPilot is in beta and we're frequently
+    updating with new features. Stay connected so you don't miss out!
+  </p>
+  <p>
+    Your download should start automatically. If it doesn't,
+    <a href="{{ site.download_link }}">click here</a>.
+  </p>
+  <p id="non-mobile-message" style="display: none">
+    This app is intended for macOS and is not available for mobile devices.
+  </p>
 
-    <section class="cta">
-        <h2><strong>Stay Updated</strong></h2>
-        <p>We have many more exciting features coming. Don't miss out!</p>
+  <section class="cta">
+    <h2><strong>Stay Updated</strong></h2>
+    <p>We have many more exciting features coming. Don't miss out!</p>
 
-        <iframe
-            src="https://docs.google.com/forms/d/e/1FAIpQLSdmYe8lz5ht3MjOktHSHIocr8ntaOWGyKSzmG3r95QPU2sUUA/viewform?embedded=true"
-            width="400" height="600" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-    </section>
+    <iframe
+      src="https://docs.google.com/forms/d/e/1FAIpQLSdmYe8lz5ht3MjOktHSHIocr8ntaOWGyKSzmG3r95QPU2sUUA/viewform?embedded=true"
+      width="400"
+      height="600"
+      frameborder="0"
+      marginheight="0"
+      marginwidth="0"
+      >Loading…</iframe
+    >
+  </section>
 </div>
 
-
 <script type="text/javascript">
-    function isMobileDevice() {
-        return /Mobi|Android/i.test(navigator.userAgent);
-    }
+  function isMobileDevice() {
+    return /Mobi|Android/i.test(navigator.userAgent);
+  }
 
-    window.onload = function () {
-        if (!isMobileDevice()) {
-            var downloadLink = document.createElement('a');
-            downloadLink.href = "{{ site.download_link }}";
-            downloadLink.download = 'MacClipboard.dmg';
-            document.body.appendChild(downloadLink);
-            downloadLink.click();
-            document.body.removeChild(downloadLink);
-        } else {
-            document.getElementById('download-message').style.display = 'none';
-            document.getElementById('non-mobile-message').style.display = 'block';
-        }
-    };
+  window.onload = function () {
+    if (!isMobileDevice()) {
+      var downloadLink = document.createElement("a");
+      downloadLink.href = "{{ site.download_link }}";
+      downloadLink.download = "ClipPilot.dmg";
+      document.body.appendChild(downloadLink);
+      downloadLink.click();
+      document.body.removeChild(downloadLink);
+    } else {
+      document.getElementById("download-message").style.display = "none";
+      document.getElementById("non-mobile-message").style.display = "block";
+    }
+  };
 </script>

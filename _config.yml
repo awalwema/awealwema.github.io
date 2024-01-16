@@ -1,7 +1,7 @@
 # ----
 # Site
 
-title: MacClipboard
+title: ClipPilot, formerly MacClipboard
 url: "https://macclipboard.com"
 baseurl:
 google_analytics_key: G-E74YZ4FT80
@@ -10,7 +10,7 @@ disqus_shortname:
 
 # Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
 logo: /siteicon.png
-description: "MacClipboard: clipboard manager for MacOs."
+description: "ClipPilot: clipboard manager for MacOs."
 author:
   name: Andrew
   email: gratatouille23@gmail.com

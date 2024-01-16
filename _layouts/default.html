@@ -1,80 +1,129 @@
-<!doctype html>
+<!DOCTYPE html>
 
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+    {% seo %} {% feed_meta %}
 
-	{% seo %}
-	{% feed_meta %}
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/screen.css" />
+    <link rel="icon" type="image/png" href="{{ site.baseurl }}/favicon.png" />
 
-	<link rel="stylesheet" href="{{ site.baseurl }}/css/screen.css">
-	<link rel="icon" type="image/png" href="{{ site.baseurl }}/favicon.png">
+    <!-- Open Graph tags -->
+    <meta
+      property="og:title"
+      content="{{ page.title | default: site.title }}"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="{{ page.url | absolute_url }}" />
+    <meta
+      property="og:image"
+      content="{{ site.baseurl }}/images/landing_maclipboard_1500.png"
+    />
+    <!-- Replace with your image path -->
+    <meta
+      property="og:description"
+      content="{{ page.description | default: site.description }}"
+    />
+    <meta property="og:site_name" content="{{ site.title }}" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:image"
+      content="{{ site.baseurl }}/images/landing_maclipboard_1500.png"
+    />
 
-	<!-- Open Graph tags -->
-	<meta property="og:title" content="{{ page.title | default: site.title }}" />
-	<meta property="og:type" content="website" />
-	<meta property="og:url" content="{{ page.url | absolute_url }}" />
-	<meta property="og:image" content="{{ site.baseurl }}/images/landing_maclipboard_1500.png" />
-	<!-- Replace with your image path -->
-	<meta property="og:description" content="{{ page.description | default: site.description }}" />
-	<meta property="og:site_name" content="{{ site.title }}" />
+    {% if jekyll.environment == 'production' and site.google_analytics_key != ''
+    %}
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics_key }}"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-	{% if jekyll.environment == 'production' and site.google_analytics_key != '' %}
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics_key }}"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag() { dataLayer.push(arguments); }
-		gtag('js', new Date());
+      gtag("config", "{{ site.google_analytics_key }}");
+    </script>
+    {% endif %}
+  </head>
 
-		gtag('config', '{{ site.google_analytics_key }}');
-	</script>
-	{% endif %}
-</head>
-
-<body>
-	<header>
-		<div class="container">
-			<div class="company-name"><a href="{{ site.baseurl }}/"><img src="{{ site.baseurl }}/images/logo1.png"
-						alt="MacClipboard Logo" width="60" height="60" class="icon" /></a>
-				<span class="company-text">MacClipboard</span>
-			</div>
-			{% include navigation.html %}
-		</div>
-	</header>
-	{{ content }}
-	<footer>
-		<div class="container">
-			<p class="editor-link"><a href="cloudcannon:collections/_data/footer.yml"
-					class="btn"><strong>&#9998;</strong> Edit footer</a></p>
-			<div class="footer-columns">
-				{% for column in site.data.footer %}
-				<ul class="footer-links">
-					{% for link in column.links %}
-					<li><a {% if link.new_window %}target="_blank" {% endif %}
-							href="{% include relative-src.html src=link.link %}" {% if link.social_icon
-							%}class="{{ link.social_icon }}-icon" {% endif %}>
-							{% if link.social_icon %}
-							{% include social-icon.html icon=link.social_icon %}
-							{% endif %}
-							{{ link.name }}</a></li>
-					{% endfor %}
-				</ul>
-				{% endfor %}
-			</div>
-			<p class="copyright">&copy; {{ site.time | date: '%Y' }} MacClipboard • <a
-					href="https://cloudcannon.com/">Template by CloudCannon</a></p>
-
-		</div>
-	</footer>
-	<script>
-		document.getElementById("open-nav").onclick = function () {
-			document.body.classList.toggle("nav-open");
-			return false;
-		};
-	</script>
-</body>
-
+  <body>
+    <header>
+      <div class="container">
+        <div class="company-name">
+          <a href="{{ site.baseurl }}/"
+            ><img
+              src="{{ site.baseurl }}/images/logo1.png"
+              alt="MacClipboard Logo"
+              width="60"
+              height="60"
+              class="icon"
+          /></a>
+          <span class="company-text">ClipPilot</span>
+        </div>
+        {% include navigation.html %}
+      </div>
+      <div class="update-notice">
+        <p>
+          <strong>Important Update:</strong> MacClipboard has been rebranded to
+          ClipPilot, your enhanced clipboard management tool for macOS.
+        </p>
+      </div>
+    </header>
+    {{ content }}
+    <footer>
+      <div class="container">
+        <p class="editor-link">
+          <a href="cloudcannon:collections/_data/footer.yml" class="btn"
+            ><strong>&#9998;</strong> Edit footer</a
+          >
+        </p>
+        <div class="footer-columns">
+          {% for column in site.data.footer %}
+          <ul class="footer-links">
+            {% for link in column.links %}
+            <li>
+              <a
+                {%
+                if
+                link.new_window
+                %}target="_blank"
+                {%
+                endif
+                %}
+                href="{% include relative-src.html src=link.link %}"
+                {%
+                if
+                link.social_icon
+                %}class="{{ link.social_icon }}-icon"
+                {%
+                endif
+                %}
+              >
+                {% if link.social_icon %} {% include social-icon.html
+                icon=link.social_icon %} {% endif %} {{ link.name }}</a
+              >
+            </li>
+            {% endfor %}
+          </ul>
+          {% endfor %}
+        </div>
+        <p class="copyright">
+          &copy; {{ site.time | date: '%Y' }} ClipPilot, formerly MacClipboard •
+          <a href="https://cloudcannon.com/">Template by CloudCannon</a>
+        </p>
+      </div>
+    </footer>
+    <script>
+      document.getElementById("open-nav").onclick = function () {
+        document.body.classList.toggle("nav-open");
+        return false;
+      };
+    </script>
+  </body>
 </html>

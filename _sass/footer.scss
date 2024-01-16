@@ -1,124 +1,149 @@
 .footer-links {
-	width: 100%;
-	margin: 10px;
-	padding: 0;
+  width: 100%;
+  margin: 10px;
+  padding: 0;
 
-	@media #{$tablet} {
-		-webkit-flex: 1 0 180px;
-		flex: 1 0 180px;
-	}
+  @media #{$tablet} {
+    -webkit-flex: 1 0 180px;
+    flex: 1 0 180px;
+  }
 
-	li {
-		list-style: none;
-		margin: 15px auto;
+  li {
+    list-style: none;
+    margin: 15px auto;
 
-		@media #{$tablet} {
-			max-width: 150px;
-		}
+    @media #{$tablet} {
+      max-width: 150px;
+    }
 
-		a {
+    a {
+      &:hover {
+        text-decoration: none;
+      }
 
-			&:hover {
-				text-decoration: none;
-			}
+      svg {
+        fill: #999;
+        margin-right: 10px;
+        transition: fill 0.2s ease;
+        vertical-align: middle;
+        position: relative;
+        top: -2px;
+        width: 22px;
+        height: 22px;
+      }
 
-			svg {
-				fill: #999;
-				margin-right: 10px;
-				transition: fill 0.2s ease;
-				vertical-align: middle;
-				position: relative;
-				top: -2px;
-				width: 22px;
-				height: 22px;
-			}
+      &:hover svg {
+        fill: #fff;
+      }
 
-			&:hover svg {
-				fill: #fff;
-			}
+      &.twitter-icon:hover svg {
+        fill: #55acee;
+      }
 
-			&.twitter-icon:hover svg {
-				fill: #55acee;
-			}
+      &.google-plus-icon:hover svg {
+        fill: #db4437;
+      }
 
-			&.google-plus-icon:hover svg {
-				fill: #db4437;
-			}
+      &.youtube-icon:hover svg {
+        fill: #cd201f;
+      }
 
-			&.youtube-icon:hover svg {
-				fill: #cd201f;
-			}
+      &.instagram-icon:hover svg {
+        fill: #f167f5;
+      }
 
-			&.instagram-icon:hover svg {
-				fill: #f167f5;
-			}
+      &.linkedin-icon:hover svg {
+        fill: #0077b5;
+      }
 
-			&.linkedin-icon:hover svg {
-				fill: #0077b5;
-			}
+      &.pinterest-icon:hover svg {
+        fill: #bd081c;
+      }
 
-			&.pinterest-icon:hover svg {
-				fill: #bd081c;
-			}
-
-			&.rss-icon:hover svg {
-				fill: #f26522;
-			}
-		}
-	}
+      &.rss-icon:hover svg {
+        fill: #f26522;
+      }
+    }
+  }
 }
 
 footer {
-	padding: 50px 0 50px 0;
-	font-size: 1.1em;
-	position: relative;
-	background: #333333;
-	color: white;
+  padding: 50px 0 50px 0;
+  font-size: 1.1em;
+  position: relative;
+  background: #333333;
+  color: white;
 
-	.copyright {
-		font-size: .8em;
-		margin: 0 auto;
-		color: white;
+  .copyright {
+    font-size: 0.8em;
+    margin: 0 auto;
+    color: white;
 
-		@media #{$tablet} {
-			text-align: center;
-		}
+    @media #{$tablet} {
+      text-align: center;
+    }
+  }
 
-	}
+  &,
+  a {
+    color: white;
+  }
 
-	&,
-	a {
-		color: white;
-	}
+  h2 {
+    font-size: 1.4em;
+    margin: 30px 0;
+    color: white;
+  }
 
-	h2 {
-		font-size: 1.4em;
-		margin: 30px 0;
-		color: white;
-	}
+  .footer-columns {
+    @extend %flexbox;
+    @include flex-flow(wrap);
+    margin: -10px -10px 10px -10px;
+  }
 
-	.footer-columns {
-		@extend %flexbox;
-		@include flex-flow(wrap);
-		margin: -10px -10px 10px -10px;
-	}
+  a {
+    text-decoration: none;
 
-	a {
-		text-decoration: none;
+    &:hover {
+      color: #fff;
+    }
+  }
 
-		&:hover {
-			color: #fff;
-		}
-	}
+  .legal-line {
+    width: 100%;
+    padding: 30px 0;
+    margin: 0;
+    background-color: white;
 
-	.legal-line {
-		width: 100%;
-		padding: 30px 0;
-		margin: 0;
-		background-color: white;
+    a {
+      font-weight: 600;
+    }
+  }
+}
 
-		a {
-			font-weight: 600;
-		}
-	}
+.announcement-banner {
+  background-color: #d7cc55; /* or any color that fits your brand */
+  color: rgb(246, 246, 246);
+  text-align: center;
+  padding: 10px 0;
+  font-weight: bold;
+}
+
+@media #{$tablet} {
+  .announcement-banner {
+    padding: 15px 0;
+  }
+}
+
+.update-notice {
+  background-color: #758541; /* Light background for notice */
+  color: #333; /* Dark text for contrast */
+  padding: 10px;
+  text-align: center;
+  //   border: 1px solid #ddd; /* Optional border */
+  margin-bottom: 20px; /* Spacing from the rest of the header content */
+
+  p {
+    color: white;
+  }
 }
