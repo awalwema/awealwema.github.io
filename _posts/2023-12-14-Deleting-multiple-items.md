@@ -30,3 +30,5 @@ author_staff_member: andrew
   <source src="/images/delete_all.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
+
+**Download ClipPilot from the [App Store](https://apps.apple.com/us/app/clippilot-clipboard/id6476124023?mt=12)**

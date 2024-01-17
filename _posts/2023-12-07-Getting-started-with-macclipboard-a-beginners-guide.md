@@ -90,4 +90,4 @@ Integrating ClipPilot into your daily routine will transform your macOS experien
 
 ## Ready to Elevate Your Clipboard Experience?
 
-Embrace the benefits of ClipPilot today and transform how you interact with your MacBook. [Download ClipPilot](/thank-you/) now and step into a world of enhanced productivity and streamlined clipboard management. Join the ClipPilot community and start your journey towards smarter clipboard usage!
+Embrace the benefits of ClipPilot today and transform how you interact with your MacBook. **Download ClipPilot from the [App Store](https://apps.apple.com/us/app/clippilot-clipboard/id6476124023?mt=12)** now and step into a world of enhanced productivity and streamlined clipboard management. Join the ClipPilot community and start your journey towards smarter clipboard usage!
