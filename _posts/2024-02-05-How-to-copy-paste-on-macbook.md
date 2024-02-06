@@ -6,7 +6,7 @@ categories:
 author_staff_member: andrew
 ---
 
-# How to Copy and Paste on Your Mac
+# How to Copy and Paste text and images on Your Mac
 
 Stepping into the world of Mac for the first time can feel daunting, especially when it comes to essential tasks like copying and pasting. This guide is crafted with you in mind, to make these steps feel like second nature.
 

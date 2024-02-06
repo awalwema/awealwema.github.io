@@ -1,12 +1,12 @@
 ---
 date: 2024-01-16
-title: "ClipPilot Now Available for Free on the App Store!"
+title: "Limited Time Offer: Get ClipPilot for Only $0.99 on the App Store!"
 categories:
   - update
 author_staff_member: andrew
 ---
 
-# ClipPilot, formerly MacClipboard, is now yours to enjoy for free on the App Store – but it’s a limited-time offer!
+# Experience ClipPilot, the Ultimate Clipboard Manager, for a Special Beta Price of $0.99 – Don't Miss Out!
 
 > **Exciting News:** Your favorite clipboard management tool, formerly known as MacClipboard, has evolved into ClipPilot and is now available on the App Store!
 
