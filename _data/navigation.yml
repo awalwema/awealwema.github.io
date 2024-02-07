@@ -6,6 +6,12 @@
   link: /blog/
   new_window: false
   highlight: false
+  useRoundShape: false
+- name: Get it Now!
+  link: https://apps.apple.com/us/app/clippilot-clipboard/id6476124023?mt=12
+  new_window: false
+  highlight: true
+  useRoundShape: true
 # - name: About
 #   link: /about/
 #   new_window: false

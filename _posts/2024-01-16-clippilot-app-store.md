@@ -1,5 +1,5 @@
 ---
-date: 2024-01-16
+date: 2024-02-05
 title: "Limited Time Offer: Get ClipPilot for Only $0.99 on the App Store!"
 categories:
   - update
